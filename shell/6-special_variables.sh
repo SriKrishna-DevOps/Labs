@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ech "script name:$0
+ech "script name:$0"
