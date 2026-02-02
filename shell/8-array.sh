@@ -1,5 +1,5 @@
 #!/bin/bash
 
-fruits=("apple","banana",organge")
+fruits=("apple","banana","orange")
 
 echo "fruits:${fruits[@]}"
