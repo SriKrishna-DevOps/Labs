@@ -6,10 +6,9 @@ echo "no.of arguments passed:$#"
 echo "1st argument:$1"
 echo "2t argument:$2"
 
-
-echo "present working directory:$pwd"
-echo "current user:$user"
-echo "home directory of current user:$home"
+echo "present working directory:$PWD"
+echo "current user:$USER"
+echo "home directory of current user:$HOME"
 
 echo "last command exit status:$?"
 #0 is success
