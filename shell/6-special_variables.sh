@@ -2,7 +2,7 @@
 
 echo "script name:$0"  
 echo "collects every input argument.:$@"
-echo"no.of arguments passed:$#"
+echo "no.of arguments passed:$#"
 echo "1st argument:$1"
 echo "2t argument:$2"
 
