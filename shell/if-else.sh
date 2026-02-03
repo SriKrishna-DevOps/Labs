@@ -1,10 +1,8 @@
 #!/bin/bash
 
-USER=$(id -u)
+if [ $(id -u) -ne 0 ]; then
+    echo "Please run as root"
+    exit 1
+fi
 
-if [ $USER -ne 0 ]; then
-    echo "you are root user"
-    else
- echo "hi root"
-
- dnf install nginx -y
+dnf install nginx -y
