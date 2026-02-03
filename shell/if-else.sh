@@ -1,6 +1,8 @@
 #!/bin/bash
 
-if[$USER -ne 0]; then
+USER=$(id -u)
+
+if [ $USER -ne 0 ]; then
     echo "you are root user"
     else
  echo "hi root"
