@@ -9,15 +9,15 @@ if [ $(id -u) -ne 0 ]; then
     echo -e "$R Please run as root $N"
     exit 1
 else
-   echo "$G installing nginx $N"
+   echo -e "$G installing nginx $N"
 fi
 
 dnf install nginx -y
 
 if [ $? -ne 0 ]; then
-    echo "$R Nginx installation is failed $N"
+    echo -e "$R Nginx installation is failed $N"
     exit 1
 
 else
-  echo "$G nginx is installed succesfully $N"
+  echo -e "$G nginx is installed succesfully $N"
   fi
