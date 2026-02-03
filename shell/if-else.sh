@@ -6,7 +6,7 @@ Y="\e[33m"
 N="\e[0m"
 
 if [ $(id -u) -ne 0 ]; then
-    echo "$R Please run as root $N"
+    echo -e "$R Please run as root $N"
     exit 1
 else
    echo "$G installing nginx $N"
