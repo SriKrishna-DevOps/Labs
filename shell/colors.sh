@@ -26,10 +26,10 @@ UNDERLINE="\033[4m"
 NC="\033[0m"
 
 
-echo -e "${RED}sri krishna${NC}"
-echo -e "${GREEN}vamsi${NC}"
+echo -e "${GREEN}tinku${NC}"
 echo -e "${YELLOW}subbu${NC}"
-echo -e "${BLUE}koushik${NC}"
+echo -e "${BLUE}dharma${NC}"
+echo -e "${RED}kittu${NC}"
 echo -e "${MAGENTA}srinu${NC}"
 echo -e "${CYAN}deepu${NC}"
  
