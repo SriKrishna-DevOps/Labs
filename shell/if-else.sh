@@ -8,3 +8,11 @@ else
 fi
 
 dnf install nginx -y
+
+if [ $? -ne 0 ]; then
+    echo"Nginx installation is failed"
+    exit1
+
+else
+  echo "nginx is installed succesfully"
+  fi
