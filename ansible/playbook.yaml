@@ -13,22 +13,11 @@
         name: "{{ package_name }}"
         state: present
 
-    - name: Copy index file
-      copy:
-        src: index.html
-        dest: /usr/share/nginx/html/index.html
-      notify: Restart nginx
-
     - name: Start nginx service
       service:
         name: nginx
         state: started
         enabled: yes
-
-    - name: Create devops user
-      user:
-        name: "{{ username }}"
-        state: present
 
   handlers:
 
