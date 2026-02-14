@@ -1,0 +1,38 @@
+- name: Configure Web Servers
+  hosts: nodes
+  become: yes
+
+  vars:
+    package_name: nginx
+    username: devops
+
+  tasks:
+
+    - name: Install nginx
+      yum:
+        name: "{{ package_name }}"
+        state: present
+
+    - name: Copy index file
+      copy:
+        src: index.html
+        dest: /usr/share/nginx/html/index.html
+      notify: Restart nginx
+
+    - name: Start nginx service
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+
+    - name: Create devops user
+      user:
+        name: "{{ username }}"
+        state: present
+
+  handlers:
+
+    - name: Restart nginx
+      service:
+        name: nginx
+        state: restarted
