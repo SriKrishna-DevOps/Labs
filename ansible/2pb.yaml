@@ -3,6 +3,6 @@
   connection:local
 
   tasks:
-    - name:Dsipaying the facts
+    - name: Displaying the facts
       ansible.builtin.debug:
         msg:"{{ ansible_facts }}"
