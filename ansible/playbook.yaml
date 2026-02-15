@@ -1,11 +1,13 @@
 - name: Configure Web Servers
   hosts: web
   become: yes
+
   tasks:
     - name: Ping the web servers
       ansible.builtin.ping:
-         - name: install the nginx
-            ansible.builtin.package:
-              name: nginx
-               state: present
+
+    - name: install the nginx
+       ansible.builtin.package:
+          name: nginx
+          state: present
      
