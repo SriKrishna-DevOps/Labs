@@ -1,27 +1,10 @@
 - name: Configure Web Servers
-  hosts: nodes
+  hosts: web
   become: yes
-
-  vars:
-    package_name: nginx
-    username: devops
-
-  tasks:
-
-    - name: Install nginx
-      yum:
-        name: "{{ package_name }}"
-        state: present
-
-    - name: Start nginx service
-      service:
-        name: nginx
-        state: started
-        enabled: yes
-
-  handlers:
-
-    - name: Restart nginx
-      service:
-        name: nginx
-        state: restarted
+  task:
+    - name: Ping the web servers
+      ansible.builtin.ping
+      - name: install the nginx
+        ansible.builtin.yum:
+          name: nginx
+          state: present
