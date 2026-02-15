@@ -5,7 +5,7 @@
     - name: Ping the web servers
       ansible.builtin.ping:
          - name: install the nginx
-          ansible.builtin.yum:
-          name: nginx
-          state: present
+            ansible.builtin.package:
+            name: nginx
+            state: present
      
