@@ -3,5 +3,5 @@
   become: yes
   tasks:
     - name: Ping the web servers
-      ansible.builtin.pinng:
+      ansible.builtin.ping:
      
