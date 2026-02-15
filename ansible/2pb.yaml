@@ -1,8 +1,8 @@
 - name: Gattering Facts
   hosts: local
-  connection:local
+  connection: local
 
   tasks:
     - name: Displaying the facts
       ansible.builtin.debug:
-        msg:"{{ ansible_facts }}"
+        msg: "{{ ansible_facts }}"
