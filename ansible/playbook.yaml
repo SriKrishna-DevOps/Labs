@@ -6,6 +6,6 @@
       ansible.builtin.ping:
          - name: install the nginx
             ansible.builtin.package:
-            name: nginx
-            state: present
+              name: nginx
+               state: present
      
