@@ -1,7 +1,7 @@
 - name: Configure Web Servers
   hosts: web
   become: yes
-  task:
+  tasks:
     - name: Ping the web servers
       ansible.builtin.pinng:
      
