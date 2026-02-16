@@ -1,0 +1,12 @@
+- name: Looping th installations
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: installing the packages
+      ansible.builtin.yum:
+        name: "{{ itme }}"
+        state: present
+      loop:
+        - mysql
+        - nginx
+    
