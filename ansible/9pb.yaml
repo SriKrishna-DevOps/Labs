@@ -1,10 +1,11 @@
 - name: Looping th installations
   hosts: localhost
   connection: local
+  become: yes
   tasks:
     - name: installing the packages
       ansible.builtin.yum:
-        name: "{{ itme }}"
+        name: "{{ item }}"
         state: present
       loop:
         - mysql
