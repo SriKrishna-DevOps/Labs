@@ -1,5 +1,5 @@
 - name: condition demo
-  hosts: local
+  hosts: localhost
   connection: local
   vars:
     IS_LIVE: false
