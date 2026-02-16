@@ -1,0 +1,10 @@
+- name: chekcing the interger
+  hosts: localhost
+  connection: local
+  vars:
+    num: 10
+  taks:
+    - name: checking the value
+    ansible.builtin.debug:
+      msg: "yes it is more than 5"
+    when: num > 5
