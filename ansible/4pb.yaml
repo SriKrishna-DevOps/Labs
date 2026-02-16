@@ -3,7 +3,7 @@
   connection: local
   vars:
     num: 10
-  taks:
+  tasks:
     - name: checking the value
       ansible.builtin.debug:
         msg: "yes it is more than 5"
