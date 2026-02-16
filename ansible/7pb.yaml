@@ -18,4 +18,4 @@
 
   - name: print output of files
     ansible.builtin.debug:
-      msg: "{{ files_output }}"
+      msg: "{{ files.txt }}"
